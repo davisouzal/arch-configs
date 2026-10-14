@@ -1,0 +1,88 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Free Solid", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: #cdd6f4;
+}
+
+/* Estilo base para os módulos (Pílulas) */
+#workspaces,
+#window,
+#clock,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#battery,
+#tray,
+#custom-power {
+    background-color: #1e1e2e;
+    padding: 2px 12px;
+    margin: 3px 0;
+    border-radius: 12px;
+    border: 1px solid #313244;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 5px;
+    color: #6c7086;
+    border-radius: 8px;
+}
+
+#workspaces button.active {
+    color: #cba6f7;
+    background-color: #313244;
+}
+
+#workspaces button:hover {
+    background-color: #45475a;
+    color: #cdd6f4;
+}
+
+/* Módulos Individuais - Cores de Destaque */
+#window {
+    color: #bac2de;
+    background-color: #181825;
+}
+
+#clock {
+    color: #cba6f7;
+    font-weight: bold;
+}
+
+#pulseaudio {
+    color: #f9e2af;
+}
+
+#network {
+    color: #89b4fa;
+}
+
+#cpu {
+    color: #74c7ec;
+}
+
+#memory {
+    color: #a6e3a1;
+}
+
+#battery {
+    color: #a6e3a1;
+}
+
+#custom-power {
+    color: #f38ba8;
+    padding-right: 14px;
+}
+
+#tray {
+    padding-right: 12px;
+    padding-left: 12px;
+}
