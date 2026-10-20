@@ -1,0 +1,67 @@
+* {
+    background-image: none;
+    box-shadow: none;
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 200ms linear;
+}
+
+/* Fundo escuro semitransparente na tela toda */
+window {
+    background-color: rgba(17, 17, 27, 0.75);
+}
+
+/* Estilo base dos botões em pílulas / cards */
+button {
+    color: #cdd6f4;
+    background-color: #1e1e2e;
+    border: 2px solid #313244;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 15px;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    background-size: 32px;
+}
+
+/* Efeito Hover e Focus com destaque lilás da Waybar */
+button:focus,
+button:active,
+button:hover {
+    background-color: #313244;
+    border-color: #cba6f7;
+    color: #cba6f7;
+    outline-style: none;
+}
+
+/* Ícones padrão do sistema */
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+    color: #f38ba8;
+}
+
+#shutdown:hover {
+    border-color: #f38ba8;
+    color: #f38ba8;
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
+
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
