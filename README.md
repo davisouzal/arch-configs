@@ -29,6 +29,6 @@ cp -r hypr/ waybar/ waypaper/ ~/.config/
 Para que tudo funcione corretamente, garanta que os seguintes pacotes estejam instalados no seu Arch Linux:
 
 ```bash
-sudo pacman -S hyprland waybar waypaper
+sudo pacman -S hyprland waybar waypaper wlogout
 ```
 *(Nota: Certifique-se de instalar também os seletores de wallpaper compatíveis com o waypaper, como `swww` ou `mpvpaper`, se necessário).*
