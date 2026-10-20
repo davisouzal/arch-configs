@@ -1,4 +1,4 @@
-nano # 🏛️ Arch Configs
+# 🏛️ Arch Configs
 
 Meu repositório pessoal de dotfiles para o **Arch Linux**. Este repositório gerencia as configurações do meu ambiente gráfico baseado em Wayland.
 
