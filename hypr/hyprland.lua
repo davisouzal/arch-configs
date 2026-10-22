@@ -23,7 +23,7 @@
 -- Variáveis globais de aplicativos
 _G.terminal    = "alacritty"
 _G.fileManager = "dolphin"
-_G.menu        = "hyprlauncher"
+_G.menu        = "sh -c '$HOME/.config/hypr/scripts/app-launcher.sh'"
 
 -- Carregamento dos módulos
 require("configs.monitors")
