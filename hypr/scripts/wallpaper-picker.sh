@@ -13,15 +13,15 @@ fi
 
 ROFI_STYLE="
 * { background-color: transparent; text-color: $THEME_FG; font: \"JetBrainsMono Nerd Font 10\"; }
-window { background-color: $THEME_BG; border: 1px; border-color: $THEME_BORDER; border-radius: 18px; width: 82%; height: 76%; padding: 16px; }
-mainbox { orientation: vertical; children: [ icon-current-entry, listview ]; spacing: 12px; }
+window { background-color: $THEME_BG; border: 1px; border-color: $THEME_BORDER; border-radius: 18px; width: 66%; height: 38%; padding: 12px; }
+mainbox { orientation: vertical; children: [ icon-current-entry, listview ]; spacing: 6px; }
 inputbar { enabled: false; }
-icon-current-entry { enabled: true; size: 380px; horizontal-align: 0.5; vertical-align: 0.5; background-color: transparent; }
-listview { flow: horizontal; columns: 5; lines: 1; fixed-columns: true; fixed-height: false; spacing: 8px; cycle: true; dynamic: false; scrollbar: false; horizontal-align: 0.5; }
+icon-current-entry { enabled: true; size: 180px; horizontal-align: 0.5; vertical-align: 0.5; background-color: transparent; }
+listview { flow: horizontal; columns: 5; lines: 1; fixed-columns: true; fixed-height: false; spacing: 10px; cycle: true; dynamic: false; scrollbar: false; horizontal-align: 0.5; }
 element { expand: false; width: 110px; background-color: transparent; orientation: horizontal; border-radius: 10px; padding: 2px; border: 0px; children: [ element-icon ]; }
 element normal.normal, element alternate.normal { expand: false; width: 110px; background-color: transparent; border: 0px; }
 element selected, element selected.normal { expand: false; width: 110px; background-color: transparent; border: 2px; border-color: $THEME_ACCENT; }
-element-icon { enabled: true; size: 104px; background-color: transparent; text-color: inherit; vertical-align: 0.5; horizontal-align: 0.5; }
+element-icon { enabled: true; size: 96px; background-color: transparent; text-color: inherit; vertical-align: 0.5; horizontal-align: 0.5; }
 "
 
 SELECTED=$(find "$WALLPAPER_DIR" -maxdepth 1 -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.jpeg" -o -name "*.webp" \) | sort | while read -r img; do

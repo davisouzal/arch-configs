@@ -20,6 +20,8 @@ hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("~/.config/hypr/scripts/wallpaper-pic
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("wlogout"))
 hl.bind(mainMod .. " + slash", hl.dsp.exec_cmd("sh -c '$HOME/.config/hypr/scripts/keybinds-viewer.sh'"))
+hl.bind("Print", hl.dsp.exec_cmd("grim - | wl-copy"))
+hl.bind(mainMod .. " + Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
 
 -- Foco com setas
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
