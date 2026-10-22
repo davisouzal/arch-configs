@@ -24,6 +24,16 @@ cd arch-configs
 cp -r hypr/ waybar/ waypaper/ ~/.config/
 ```
 
+## 🔄 Atualizar as configurações do repositório
+
+Para trazer as versões atuais de `~/.config` para este repositório, execute:
+
+```bash
+./sync-config.sh
+```
+
+O script espelha `hypr`, `waybar`, `waypaper` e `wlogout`, exibindo uma prévia e pedindo confirmação. Arquivos existentes no repositório que não estiverem nas pastas de origem serão removidos.
+
 ## 📦 Dependências Necessárias
 
 Para que tudo funcione corretamente, garanta que os seguintes pacotes estejam instalados no seu Arch Linux:

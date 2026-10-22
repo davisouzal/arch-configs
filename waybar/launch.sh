@@ -18,8 +18,5 @@ launch_waybar() {
 # Inicializa a Waybar pela primeira vez
 launch_waybar
 
-# Monitora continuamente a pasta por eventos de modificação, criação ou deleção
-while inotifywait -e modify,create,delete,move -r "$CONFIG_DIR"; do
-    echo "Configuração da Waybar alterada. Reiniciando..."
-    launch_waybar
-done
+# A Waybar monitora CSS e recarrega stylesheets sem reiniciar o processo.
+# A barra só é iniciada aqui; abrir menus ou trocar cores não altera seu tamanho.

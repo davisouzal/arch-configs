@@ -1,3 +1,5 @@
+@import "../hypr/theme/colors.css";
+
 * {
     border: none;
     border-radius: 0;
@@ -8,7 +10,7 @@
 
 window#waybar {
     background-color: transparent;
-    color: #cdd6f4;
+    color: @theme_fg;
 }
 
 /* Estilo base para os módulos (Pílulas) */
@@ -22,63 +24,63 @@ window#waybar {
 #battery,
 #tray,
 #custom-power {
-    background-color: #1e1e2e;
+    background-color: @theme_bg;
     padding: 2px 12px;
     margin: 3px 0;
     border-radius: 12px;
-    border: 1px solid #313244;
+    border: 1px solid @theme_border;
 }
 
 /* Workspaces */
 #workspaces button {
     padding: 0 5px;
-    color: #6c7086;
+    color: @theme_muted;
     border-radius: 8px;
 }
 
 #workspaces button.active {
-    color: #cba6f7;
-    background-color: #313244;
+    color: @theme_accent;
+    background-color: @theme_surface;
 }
 
 #workspaces button:hover {
-    background-color: #45475a;
-    color: #cdd6f4;
+    background-color: @theme_border;
+    color: @theme_fg;
 }
 
 /* Módulos Individuais - Cores de Destaque */
 #window {
-    color: #bac2de;
-    background-color: #181825;
+    color: @theme_fg;
+    background-color: @theme_surface;
 }
 
 #clock {
-    color: #cba6f7;
+    color: @theme_accent;
     font-weight: bold;
 }
 
 #pulseaudio {
-    color: #f9e2af;
+    color: @theme_accent;
 }
 
 #network {
-    color: #89b4fa;
+    color: @theme_accent;
 }
 
 #cpu {
-    color: #74c7ec;
+    color: @theme_accent;
 }
 
 #memory {
-    color: #a6e3a1;
+    color: @theme_accent;
 }
 
 #battery {
-    color: #a6e3a1;
+    color: @theme_accent;
 }
 
 #custom-power {
-    color: #f38ba8;
+    color: @theme_accent;
     padding-right: 14px;
 }
 

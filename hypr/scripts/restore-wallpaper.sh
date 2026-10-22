@@ -28,5 +28,6 @@ if [ -f "$CACHE_FILE" ]; then
     LAST_WALL=$(cat "$CACHE_FILE")
     if [ -f "$LAST_WALL" ]; then
         $CLI_CMD img "$LAST_WALL" --transition-type none
+        "$HOME/.config/hypr/scripts/update-theme.sh" "$LAST_WALL" >/dev/null 2>&1 || true
     fi
 fi
